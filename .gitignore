@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.DS_Store
+.env
+rag_vector/config_local.py
+rag_vector/ragas_results*.json
+data/chroma/
+data/pdfs/
+outputs/
+Huawei-Interview-Zhongshi_Hou/
+Huawei-Interview-Zhongshi_Hou.pptx

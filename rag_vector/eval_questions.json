@@ -1,0 +1,46 @@
+[
+  {
+    "id": "cnn_comparison",
+    "question": "哪些论文比较了CNN、CNN-SVM和DNN在轴承故障检测中的表现？主要结论是什么？",
+    "expected_sources": [
+      "papers/Bearing fault detection based on CNN and performance comparison with CNN-SVM and DNN.pdf"
+    ]
+  },
+  {
+    "id": "monte_carlo_rul",
+    "question": "Monte Carlo如何改进similarity-based RUL prediction？主要实验结论是什么？",
+    "expected_sources": [
+      "papers/Improvement by Monte Carlo for Trajectory Similarity-Based RUL Prediction.pdf",
+      "papers/Improvement in similarity-based RUL prediction for bearing by Monte Carlo.pdf"
+    ]
+  },
+  {
+    "id": "light_cnn",
+    "question": "Light CNN如何用于轴承故障诊断和RUL预测？",
+    "expected_sources": [
+      "papers/Light convolutional neural network by neural architecture search and model pruning for bearing fault diagnosis and RUL prediction.pdf"
+    ]
+  },
+  {
+    "id": "fuzzy_transfer",
+    "question": "fuzzy membership如何支持fault diagnosis和RUL prediction之间的迁移学习？",
+    "expected_sources": [
+      "papers/Fuzzy-Membership-Based Framework for Task Transfer Learning Between Fault Diagnosis and RUL Prediction.pdf"
+    ]
+  },
+  {
+    "id": "digital_twin",
+    "question": "digital twin在轴承故障仿真和诊断中有什么作用？",
+    "expected_sources": [
+      "papers/Bearing Faults Simulation and Diagnosis based on the Digital Twin.pdf",
+      "papers/Modeling of Vibration Produced by Bearing with Defects and its Application.pdf"
+    ]
+  },
+  {
+    "id": "phm_gui_manual_workflow",
+    "question": "PHM-GUI论文中传统手动流程和参数配置有什么问题？",
+    "expected_sources": [
+      "PHM-GUI development and its application in bearing fault diagnosis and prognosis.pdf"
+    ]
+  }
+]

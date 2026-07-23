@@ -1,0 +1,202 @@
+{
+  "papers": [
+    {
+      "paper_id": "P01",
+      "file": "PHM-GUI development and its application in bearing fault diagnosis and prognosis.pdf",
+      "title": "PHM-GUI development and its application in bearing fault diagnosis and prognosis",
+      "authors": "Jiangchao Liu; Diwang Ruan; Yiying Yang; Luxi Zhang; Zhaorong Li; Jianping Yan",
+      "year": 2024,
+      "task": "platform; fault diagnosis; RUL prediction",
+      "methods": ["PHM-GUI", "workflow design", "parameter configuration"],
+      "dataset": "multiple bearing datasets",
+      "notes": "Main reference for replacing manual PHM workflow with AI Agent support."
+    },
+    {
+      "paper_id": "P02",
+      "file": "papers/Modeling of A Bearing Test Bench and Analysis of Defect Bearing Dynamics in Modelica.pdf",
+      "title": "Modeling of A Bearing Test Bench and Analysis of Defect Bearing Dynamics in Modelica",
+      "authors": "",
+      "year": "",
+      "task": "bearing dynamics modeling; simulation",
+      "methods": ["Modelica", "virtual bearing test bench", "defect dynamics"],
+      "dataset": "simulation",
+      "notes": ""
+    },
+    {
+      "paper_id": "P03",
+      "file": "papers/Remaining Useful Life Prediction for Ball Bearing based on Wavelet Transfer and SVM.pdf",
+      "title": "Remaining Useful Life Prediction for Ball Bearing based on Wavelet Transfer and SVM",
+      "authors": "",
+      "year": "",
+      "task": "RUL prediction",
+      "methods": ["wavelet transform", "SVM", "machine learning"],
+      "dataset": "",
+      "notes": ""
+    },
+    {
+      "paper_id": "P04",
+      "file": "papers/Bearing fault detection based on CNN and performance comparison with CNN-SVM and DNN.pdf",
+      "title": "Bearing fault detection based on CNN and performance comparison with CNN-SVM and DNN",
+      "authors": "Feifan Zhang",
+      "year": 2019,
+      "task": "fault diagnosis; fault detection; method comparison",
+      "methods": ["CNN", "CNN-SVM", "DNN"],
+      "dataset": "",
+      "notes": "Useful for comparing CNN, CNN-SVM, and DNN."
+    },
+    {
+      "paper_id": "P05",
+      "file": "papers/CNN parameter design based on fault signal analysis and its application in bearing fault diagnosis.pdf",
+      "title": "CNN parameter design based on fault signal analysis and its application in bearing fault diagnosis",
+      "authors": "",
+      "year": "",
+      "task": "fault diagnosis; parameter design",
+      "methods": ["CNN", "fault signal analysis", "parameter design"],
+      "dataset": "",
+      "notes": ""
+    },
+    {
+      "paper_id": "P06",
+      "file": "papers/A new solving method for ball bearing dynamics model based on optimization with nonlinear constraints.pdf",
+      "title": "A new solving method for ball bearing dynamics model based on optimization with nonlinear constraints",
+      "authors": "",
+      "year": "",
+      "task": "bearing dynamics modeling; optimization",
+      "methods": ["nonlinear constraints", "optimization", "bearing dynamics model"],
+      "dataset": "simulation",
+      "notes": ""
+    },
+    {
+      "paper_id": "P07",
+      "file": "papers/Optimal modifications in CNN for bearing fault classification and adaptation across different working conditions.pdf",
+      "title": "Optimal modifications in CNN for bearing fault classification and adaptation across different working conditions",
+      "authors": "",
+      "year": "",
+      "task": "fault classification; working condition adaptation",
+      "methods": ["CNN", "CNN-SVM", "decision tree", "working condition adaptation"],
+      "dataset": "",
+      "notes": ""
+    },
+    {
+      "paper_id": "P08",
+      "file": "papers/Bearing Fault Classification Based on Convolutional Neural Network and Uncertainty Analysis.pdf",
+      "title": "Bearing Fault Classification Based on Convolutional Neural Network and Uncertainty Analysis",
+      "authors": "",
+      "year": "",
+      "task": "fault classification; uncertainty analysis",
+      "methods": ["CNN", "Gaussian process", "uncertainty analysis"],
+      "dataset": "CWRU",
+      "notes": ""
+    },
+    {
+      "paper_id": "P09",
+      "file": "papers/Dynamics Modeling and Analysis of Ball Bearings with Defects Under a Virtual Bearing Test Bench.pdf",
+      "title": "Dynamics Modeling and Analysis of Ball Bearings with Defects Under a Virtual Bearing Test Bench",
+      "authors": "",
+      "year": "",
+      "task": "bearing dynamics modeling; simulation",
+      "methods": ["virtual bearing test bench", "defect modeling", "dynamics analysis"],
+      "dataset": "simulation",
+      "notes": ""
+    },
+    {
+      "paper_id": "P10",
+      "file": "papers/Bearing Faults Simulation and Diagnosis based on the Digital Twin.pdf",
+      "title": "Bearing Faults Simulation and Diagnosis based on the Digital Twin",
+      "authors": "",
+      "year": "",
+      "task": "fault simulation; fault diagnosis; digital twin",
+      "methods": ["digital twin", "simulation", "diagnosis"],
+      "dataset": "simulation",
+      "notes": ""
+    },
+    {
+      "paper_id": "P11",
+      "file": "papers/Design and implementation of a physics-guided bearing fault diagnosis system.pdf",
+      "title": "Design and implementation of a physics-guided bearing fault diagnosis system",
+      "authors": "",
+      "year": "",
+      "task": "fault diagnosis; physics-guided diagnosis",
+      "methods": ["physics-guided", "envelope spectrum", "fault characteristic frequency"],
+      "dataset": "",
+      "notes": ""
+    },
+    {
+      "paper_id": "P12",
+      "file": "papers/Improvement by Monte Carlo for Trajectory Similarity-Based RUL Prediction.pdf",
+      "title": "Improvement by Monte Carlo for Trajectory Similarity-Based RUL Prediction",
+      "authors": "",
+      "year": "",
+      "task": "RUL prediction",
+      "methods": ["Monte Carlo", "trajectory similarity", "health indicator"],
+      "dataset": "XJTU-SY; FEMTO",
+      "notes": ""
+    },
+    {
+      "paper_id": "P13",
+      "file": "papers/Bearing Fault Classification based on Wavelet Entropies and Analysis of Working Conditions.pdf",
+      "title": "Bearing Fault Classification based on Wavelet Entropies and Analysis of Working Conditions",
+      "authors": "",
+      "year": "",
+      "task": "fault classification; working condition analysis",
+      "methods": ["wavelet entropy", "SVM", "CNN", "working condition analysis"],
+      "dataset": "",
+      "notes": ""
+    },
+    {
+      "paper_id": "P14",
+      "file": "papers/Fuzzy-Membership-Based Framework for Task Transfer Learning Between Fault Diagnosis and RUL Prediction.pdf",
+      "title": "Fuzzy-Membership-Based Framework for Task Transfer Learning Between Fault Diagnosis and RUL Prediction",
+      "authors": "",
+      "year": "",
+      "task": "fault diagnosis; RUL prediction; transfer learning",
+      "methods": ["fuzzy membership", "transfer learning", "classification", "regression"],
+      "dataset": "",
+      "notes": ""
+    },
+    {
+      "paper_id": "P15",
+      "file": "papers/Modeling of Vibration Produced by Bearing with Defects and its Application.pdf",
+      "title": "Modeling of Vibration Produced by Bearing with Defects and its Application",
+      "authors": "",
+      "year": "",
+      "task": "bearing vibration modeling; simulation",
+      "methods": ["vibration modeling", "defect modeling", "digital twin"],
+      "dataset": "simulation",
+      "notes": ""
+    },
+    {
+      "paper_id": "P16",
+      "file": "papers/Fuzzy-membership-based labeling a new labeling method for classification and regression.pdf",
+      "title": "Fuzzy-membership-based labeling a new labeling method for classification and regression",
+      "authors": "",
+      "year": "",
+      "task": "classification; regression; labeling",
+      "methods": ["fuzzy membership", "labeling"],
+      "dataset": "",
+      "notes": ""
+    },
+    {
+      "paper_id": "P17",
+      "file": "papers/Light convolutional neural network by neural architecture search and model pruning for bearing fault diagnosis and RUL prediction.pdf",
+      "title": "Light convolutional neural network by neural architecture search and model pruning for bearing fault diagnosis and RUL prediction",
+      "authors": "",
+      "year": "",
+      "task": "fault diagnosis; RUL prediction",
+      "methods": ["light CNN", "neural architecture search", "model pruning"],
+      "dataset": "",
+      "notes": ""
+    },
+    {
+      "paper_id": "P18",
+      "file": "papers/Improvement in similarity-based RUL prediction for bearing by Monte Carlo.pdf",
+      "title": "Improvement in similarity-based RUL prediction for bearing by Monte Carlo",
+      "authors": "",
+      "year": "",
+      "task": "RUL prediction",
+      "methods": ["Monte Carlo", "similarity-based RUL", "health indicator"],
+      "dataset": "",
+      "notes": ""
+    }
+  ]
+}

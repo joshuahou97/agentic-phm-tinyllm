@@ -1,0 +1,4 @@
+chromadb
+pypdf
+langfuse
+ragas
