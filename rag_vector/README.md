@@ -1,11 +1,11 @@
-# Chroma 向量库 RAG
+# PHM Knowledge Retrieval and Agent Workflow
 
-这是当前项目中较正式的 RAG 版本，主要用于基于论文知识库回答 PHM、轴承故障诊断、RUL 预测等问题，并支持 Agent workflow 演示。
+这是当前项目中的知识检索与 Agent workflow 原型模块，主要用于把 PHM、轴承故障诊断、RUL 预测等论文知识组织成可检索证据，并为后续智能体诊断流程提供领域知识支持。
 
 整体流程如下：
 
 ```text
-PDF 论文 -> 文本切分 chunk -> OpenAI embedding -> Chroma 向量数据库 -> 检索 -> LLM 回答
+PDF 论文 -> 文本切分 chunk -> OpenAI embedding -> Chroma 向量数据库 -> 检索/重排序 -> Agent workflow / LLM 回答
 ```
 
 ## 安装依赖
@@ -164,32 +164,9 @@ rag_vector/ragas_results.json
 rag_vector/ragas_results_full.json
 ```
 
-## Agent Demo
+## Agent Workflow 演示
 
-普通 Agent demo 用于展示 RAG 如何支持 PHM workflow 规划，而不仅是问答：
-
-```bash
-python3 rag_vector/agent_demo.py "我有一个轴承故障诊断任务，数据量较少并且工况变化明显，应该选择什么流程和方法？" --retrieve-only --keyword-only --debug
-```
-
-如果已经配置 API Key，可以运行完整版本：
-
-```bash
-python3 rag_vector/agent_demo.py "我有一个轴承故障诊断任务，数据量较少并且工况变化明显，应该选择什么流程和方法？"
-```
-
-输出内容包括：
-
-- 任务理解
-- 推荐 PHM 流程
-- 候选方法和理由
-- 实验注意事项
-- RAG 证据来源
-- 仍然缺少的用户信息
-
-## Langfuse Agent Workflow 演示
-
-中期演讲建议使用这个脚本，它可以在 Langfuse 中展示一次完整 Agent workflow：
+这个脚本用于展示 RAG 如何支持 PHM workflow 规划，而不仅是问答。配置 Langfuse 后，它可以记录一次完整 Agent workflow trace：
 
 ```bash
 python3 rag_vector/agent_workflow_langfuse.py "我有轴承振动数据，想做故障诊断，数据量较少，工况变化明显，应该怎么设计流程？"
@@ -265,7 +242,6 @@ python3 rag_vector/agent_workflow_langfuse.py \
 
 - `build_vector_db.py`：读取 PDF，切分文本，生成 embedding，并写入 Chroma。
 - `ask_vector.py`：普通 RAG 问答入口。
-- `agent_demo.py`：不接 Langfuse 的 Agent demo。
 - `agent_workflow_langfuse.py`：带 Langfuse tracing 的完整 Agent workflow。
 - `eval_rag.py`：离线检索评估脚本。
 - `eval_ragas.py`：Ragas 端到端回答质量评估脚本。
@@ -274,13 +250,11 @@ python3 rag_vector/agent_workflow_langfuse.py \
 - `embedding.py`：调用 OpenAI embedding / chat completion API。
 - `eval_questions.json`：离线评估问题集。
 
-## 与旧版 TF-IDF Demo 的区别
+## 当前模块定位
 
-旧版 `rag_demo` 主要依赖关键词匹配。
+该目录不是最终工业 PHM 系统的全部，而是后续 Agent / TinyLLM 诊断系统中的知识支撑模块。当前重点包括：
 
-当前 `rag_vector` 使用 embedding 向量和 Chroma 向量数据库，因此更适合：
-
-- 语义检索
-- 中英文跨语言问题
-- 根据论文证据生成回答
-- 支持 Agent workflow 中的多步骤检索和决策
+- 基于论文构建可检索的领域知识库。
+- 为 Agent workflow 提供多步骤检索、证据选择和方法推荐依据。
+- 使用 Ragas 和离线指标评估知识检索与回答质量。
+- 为后续 FCF 特征提取、多模态数据集构建、TinyLLM 微调和嵌入式验证提供文献支撑。

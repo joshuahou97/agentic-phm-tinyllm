@@ -6,7 +6,6 @@ import os
 import re
 from pathlib import Path
 
-from agent_demo import infer_workflow
 from ask_vector import (
     analyze_query,
     build_prompt,
@@ -26,6 +25,33 @@ VIBRATION_RE = re.compile(r"振动|vibration|accelerometer|acceleration", re.IGN
 LABEL_RE = re.compile(r"标签|label|labeled|unlabeled", re.IGNORECASE)
 FAULT_RE = re.compile(r"故障诊断|故障检测|故障分类|fault diagnosis|fault detection|fault classification", re.IGNORECASE)
 RUL_RE = re.compile(r"rul|剩余寿命|remaining useful life|prognosis|寿命预测", re.IGNORECASE)
+
+
+def infer_workflow(query_profile: dict) -> list[str]:
+    terms = " ".join(query_profile["technical_terms"] + query_profile["general_terms"]).lower()
+    if "rul" in terms or "remaining useful life" in terms or "寿命" in terms:
+        return [
+            "数据读取与工况确认",
+            "退化特征或健康指标构建",
+            "RUL预测模型选择",
+            "不确定性或误差评估",
+            "结果解释与维护建议",
+        ]
+    if "simulation" in terms or "model" in terms or "digital" in terms or "twin" in terms:
+        return [
+            "故障类型与工况定义",
+            "仿真/数字孪生模型选择",
+            "信号生成或特征提取",
+            "诊断模型验证",
+            "仿真结果与实测数据对比",
+        ]
+    return [
+        "数据预处理",
+        "特征提取或端到端信号输入",
+        "故障诊断模型选择",
+        "参数调优与训练",
+        "准确率、鲁棒性和工况适应性评估",
+    ]
 
 
 def load_local_config() -> None:
